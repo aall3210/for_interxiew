@@ -10,8 +10,8 @@ namespace qh
     class INIParser
     {
     public:
-        typedef std::map<std::string, std::string> key_value;
-        typedef std::map<std::string, key_value>   section;
+        typedef std::map<std::string, std::string> key_value_map;
+        typedef std::map<std::string, key_value_map>   section_map;
 
     public:
         INIParser();
@@ -43,7 +43,7 @@ namespace qh
         const std::string& Get(const std::string& section, const std::string& key, bool* found);
 
     private:
-        section section_;
+        section_map section_;
     };
 }
 
