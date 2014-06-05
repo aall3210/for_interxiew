@@ -1,0 +1,505 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00     5910     0.00     0.00  qh::Tokener::isEnd() const
+  0.00      0.00     0.00     4256     0.00     0.00  qh::Tokener::next()
+  0.00      0.00     0.00      761     0.00     0.00  std::_Identity<std::string>::operator()(std::string const&) const
+  0.00      0.00     0.00      743     0.00     0.00  std::less<std::string>::operator()(std::string const&, std::string const&) const
+  0.00      0.00     0.00      743     0.00     0.00  bool std::operator< <char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.00     0.00      705     0.00     0.00  std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_node<std::string> const*)
+  0.00      0.00     0.00      555     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*)
+  0.00      0.00     0.00      555     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node<std::string> const*)
+  0.00      0.00     0.00      518     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const
+  0.00      0.00     0.00      302     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base const*)
+  0.00      0.00     0.00      248     0.00     0.00  qh::Tokener::skipTo(char)
+  0.00      0.00     0.00      238     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base const*)
+  0.00      0.00     0.00      230     0.00     0.00  qh::Tokener::nextString(char)
+  0.00      0.00     0.00      188     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*)
+  0.00      0.00     0.00      188     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node_base const*)
+  0.00      0.00     0.00      187     0.00     0.00  qh::Tokener::back()
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree_const_iterator<std::string>::operator==(std::_Rb_tree_const_iterator<std::string> const&) const
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree_const_iterator<std::string>::operator!=(std::_Rb_tree_const_iterator<std::string> const&) const
+  0.00      0.00     0.00      187     0.00     0.00  std::set<std::string, std::less<std::string>, std::allocator<std::string> >::end() const
+  0.00      0.00     0.00      187     0.00     0.00  std::set<std::string, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() const
+  0.00      0.00     0.00      187     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() const
+  0.00      0.00     0.00       61     0.00     0.00  qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&)
+  0.00      0.00     0.00       61     0.00     0.00  qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&)
+  0.00      0.00     0.00       61     0.00     0.00  qh::Tokener::reset(char const*, int)
+  0.00      0.00     0.00       61     0.00     0.00  qh::Tokener::Tokener(std::string const&)
+  0.00      0.00     0.00       61     0.00     0.00  qh::Tokener::~Tokener()
+  0.00      0.00     0.00       61     0.00     0.00  std::char_traits<char>::compare(char const*, char const*, unsigned int)
+  0.00      0.00     0.00       61     0.00     0.00  __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.00     0.00       61     0.00     0.00  bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.00     0.00       43     0.00     0.00  qh::Tokener::getCurReadPos() const
+  0.00      0.00     0.00       43     0.00     0.00  qh::Tokener::getReadableSize() const
+  0.00      0.00     0.00       23     0.00     0.00  std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*)
+  0.00      0.00     0.00       21     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base*)
+  0.00      0.00     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<std::string>::new_allocator()
+  0.00      0.00     0.00       20     0.00     0.00  __gnu_cxx::new_allocator<std::string>::~new_allocator()
+  0.00      0.00     0.00       20     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const
+  0.00      0.00     0.00       20     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_Node_allocator() const
+  0.00      0.00     0.00       20     0.00     0.00  std::allocator<std::string>::allocator<std::_Rb_tree_node<std::string> >(std::allocator<std::_Rb_tree_node<std::string> > const&)
+  0.00      0.00     0.00       20     0.00     0.00  std::allocator<std::string>::~allocator()
+  0.00      0.00     0.00       20     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end()
+  0.00      0.00     0.00       20     0.00     0.00  std::string* std::__addressof<std::string>(std::string&)
+  0.00      0.00     0.00       14     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base*)
+  0.00      0.00     0.00       12     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin()
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<std::string>::destroy(std::string*)
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::deallocate(std::_Rb_tree_node<std::string>*, unsigned int)
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::allocate(unsigned int, void const*)
+  0.00      0.00     0.00       10     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::max_size() const
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::string> const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::pair<std::_Rb_tree_iterator<std::string>, bool>::pair(std::_Rb_tree_iterator<std::string> const&, bool const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::pair<std::_Rb_tree_const_iterator<std::string>, bool>::pair(std::_Rb_tree_const_iterator<std::string> const&, bool const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_node()
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_put_node(std::_Rb_tree_node<std::string>*)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&)
+  0.00      0.00     0.00       10     0.00     0.00  operator new(unsigned int, void*)
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree_iterator<std::string>::operator==(std::_Rb_tree_iterator<std::string> const&) const
+  0.00      0.00     0.00        3     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::begin()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::~new_allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<std::_Rb_tree_node<std::string> >::allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::allocator<std::_Rb_tree_node<std::string> >::~allocator()
+  0.00      0.00     0.00        2     0.00     0.00  std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set()
+  0.00      0.00     0.00        2     0.00     0.00  std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*)
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree()
+  0.00      0.00     0.00        2     0.00     0.00  std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree()
+  0.00      0.00     0.00        1     0.00     0.00  test_ProxUrlExtractor_Extract1()
+  0.00      0.00     0.00        1     0.00     0.00  test_ProxUrlExtractor_Extract2()
+  0.00      0.00     0.00        1     0.00     0.00  std::_Rb_tree_iterator<std::string>::operator--()
+
+			Call graph
+
+
+granularity: each sample hit covers 4 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00     187/5910        qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+                0.00    0.00    1467/5910        qh::Tokener::nextString(char) [20]
+                0.00    0.00    4256/5910        qh::Tokener::next() [9]
+[8]      0.0    0.00    0.00    5910         qh::Tokener::isEnd() const [8]
+-----------------------------------------------
+                0.00    0.00     187/4256        qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+                0.00    0.00    4069/4256        qh::Tokener::skipTo(char) [18]
+[9]      0.0    0.00    0.00    4256         qh::Tokener::next() [9]
+                0.00    0.00    4256/5910        qh::Tokener::isEnd() const [8]
+-----------------------------------------------
+                0.00    0.00       8/761         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+                0.00    0.00      10/761         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+                0.00    0.00     188/761         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+                0.00    0.00     555/761         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*) [14]
+[10]     0.0    0.00    0.00     761         std::_Identity<std::string>::operator()(std::string const&) const [10]
+-----------------------------------------------
+                0.00    0.00       8/743         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+                0.00    0.00      23/743         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00     172/743         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+                0.00    0.00     540/743         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+[11]     0.0    0.00    0.00     743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+                0.00    0.00     743/743         bool std::operator< <char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [12]
+-----------------------------------------------
+                0.00    0.00     743/743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+[12]     0.0    0.00    0.00     743         bool std::operator< <char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [12]
+-----------------------------------------------
+                0.00    0.00     187/705         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+                0.00    0.00     518/705         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const [16]
+[13]     0.0    0.00    0.00     705         std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_node<std::string> const*) [13]
+-----------------------------------------------
+                0.00    0.00      15/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00     540/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+[14]     0.0    0.00    0.00     555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*) [14]
+                0.00    0.00     555/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node<std::string> const*) [15]
+                0.00    0.00     555/761         std::_Identity<std::string>::operator()(std::string const&) const [10]
+-----------------------------------------------
+                0.00    0.00     555/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*) [14]
+[15]     0.0    0.00    0.00     555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node<std::string> const*) [15]
+-----------------------------------------------
+                0.00    0.00     187/518         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::end() const [26]
+                0.00    0.00     331/518         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[16]     0.0    0.00    0.00     518         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const [16]
+                0.00    0.00     518/705         std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_node<std::string> const*) [13]
+-----------------------------------------------
+                0.00    0.00     302/302         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+[17]     0.0    0.00    0.00     302         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base const*) [17]
+-----------------------------------------------
+                0.00    0.00     248/248         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[18]     0.0    0.00    0.00     248         qh::Tokener::skipTo(char) [18]
+                0.00    0.00    4069/4256        qh::Tokener::next() [9]
+                0.00    0.00     187/187         qh::Tokener::back() [23]
+-----------------------------------------------
+                0.00    0.00     238/238         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+[19]     0.0    0.00    0.00     238         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base const*) [19]
+-----------------------------------------------
+                0.00    0.00     230/230         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[20]     0.0    0.00    0.00     230         qh::Tokener::nextString(char) [20]
+                0.00    0.00    1467/5910        qh::Tokener::isEnd() const [8]
+-----------------------------------------------
+                0.00    0.00       8/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00       8/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+                0.00    0.00     172/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[21]     0.0    0.00    0.00     188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+                0.00    0.00     188/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node_base const*) [22]
+                0.00    0.00     188/761         std::_Identity<std::string>::operator()(std::string const&) const [10]
+-----------------------------------------------
+                0.00    0.00     188/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+[22]     0.0    0.00    0.00     188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node_base const*) [22]
+-----------------------------------------------
+                0.00    0.00     187/187         qh::Tokener::skipTo(char) [18]
+[23]     0.0    0.00    0.00     187         qh::Tokener::back() [23]
+-----------------------------------------------
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[24]     0.0    0.00    0.00     187         std::_Rb_tree_const_iterator<std::string>::operator==(std::_Rb_tree_const_iterator<std::string> const&) const [24]
+-----------------------------------------------
+                0.00    0.00     187/187         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[25]     0.0    0.00    0.00     187         std::_Rb_tree_const_iterator<std::string>::operator!=(std::_Rb_tree_const_iterator<std::string> const&) const [25]
+-----------------------------------------------
+                0.00    0.00     187/187         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[26]     0.0    0.00    0.00     187         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::end() const [26]
+                0.00    0.00     187/518         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const [16]
+-----------------------------------------------
+                0.00    0.00     187/187         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[27]     0.0    0.00    0.00     187         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [27]
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+-----------------------------------------------
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[28]     0.0    0.00    0.00     187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+                0.00    0.00     540/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*) [14]
+                0.00    0.00     540/743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+                0.00    0.00     302/302         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base const*) [17]
+                0.00    0.00     238/238         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base const*) [19]
+                0.00    0.00     187/705         std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_node<std::string> const*) [13]
+-----------------------------------------------
+                0.00    0.00     187/187         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [27]
+[29]     0.0    0.00    0.00     187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+                0.00    0.00     331/518         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const [16]
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() const [30]
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() const [31]
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [28]
+                0.00    0.00     187/187         std::_Rb_tree_const_iterator<std::string>::operator==(std::_Rb_tree_const_iterator<std::string> const&) const [24]
+                0.00    0.00     172/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+                0.00    0.00     172/743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+-----------------------------------------------
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[30]     0.0    0.00    0.00     187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() const [30]
+-----------------------------------------------
+                0.00    0.00     187/187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [29]
+[31]     0.0    0.00    0.00     187         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() const [31]
+-----------------------------------------------
+                0.00    0.00      14/61          test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00      47/61          test_ProxUrlExtractor_Extract2() [87]
+[32]     0.0    0.00    0.00      61         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&) [32]
+                0.00    0.00      61/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+-----------------------------------------------
+                0.00    0.00      61/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&) [32]
+[33]     0.0    0.00    0.00      61         qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+                0.00    0.00     248/248         qh::Tokener::skipTo(char) [18]
+                0.00    0.00     230/230         qh::Tokener::nextString(char) [20]
+                0.00    0.00     187/4256        qh::Tokener::next() [9]
+                0.00    0.00     187/187         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::end() const [26]
+                0.00    0.00     187/187         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [27]
+                0.00    0.00     187/187         std::_Rb_tree_const_iterator<std::string>::operator!=(std::_Rb_tree_const_iterator<std::string> const&) const [25]
+                0.00    0.00     187/5910        qh::Tokener::isEnd() const [8]
+                0.00    0.00      61/61          qh::Tokener::Tokener(std::string const&) [35]
+                0.00    0.00      61/61          qh::Tokener::~Tokener() [36]
+                0.00    0.00      43/43          qh::Tokener::getCurReadPos() const [40]
+                0.00    0.00      43/43          qh::Tokener::getReadableSize() const [41]
+-----------------------------------------------
+                0.00    0.00      61/61          qh::Tokener::Tokener(std::string const&) [35]
+[34]     0.0    0.00    0.00      61         qh::Tokener::reset(char const*, int) [34]
+-----------------------------------------------
+                0.00    0.00      61/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[35]     0.0    0.00    0.00      61         qh::Tokener::Tokener(std::string const&) [35]
+                0.00    0.00      61/61          qh::Tokener::reset(char const*, int) [34]
+-----------------------------------------------
+                0.00    0.00      61/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[36]     0.0    0.00    0.00      61         qh::Tokener::~Tokener() [36]
+-----------------------------------------------
+                0.00    0.00      61/61          __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [38]
+[37]     0.0    0.00    0.00      61         std::char_traits<char>::compare(char const*, char const*, unsigned int) [37]
+-----------------------------------------------
+                0.00    0.00      61/61          bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [39]
+[38]     0.0    0.00    0.00      61         __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [38]
+                0.00    0.00      61/61          std::char_traits<char>::compare(char const*, char const*, unsigned int) [37]
+-----------------------------------------------
+                0.00    0.00      14/61          test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00      47/61          test_ProxUrlExtractor_Extract2() [87]
+[39]     0.0    0.00    0.00      61         bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [39]
+                0.00    0.00      61/61          __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [38]
+-----------------------------------------------
+                0.00    0.00      43/43          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[40]     0.0    0.00    0.00      43         qh::Tokener::getCurReadPos() const [40]
+-----------------------------------------------
+                0.00    0.00      43/43          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [33]
+[41]     0.0    0.00    0.00      43         qh::Tokener::getReadableSize() const [41]
+-----------------------------------------------
+                0.00    0.00       3/23          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::begin() [73]
+                0.00    0.00      10/23          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00      10/23          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+[42]     0.0    0.00    0.00      23         std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*) [42]
+-----------------------------------------------
+                0.00    0.00      10/21          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+                0.00    0.00      11/21          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[43]     0.0    0.00    0.00      21         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base*) [43]
+-----------------------------------------------
+                0.00    0.00      20/20          std::allocator<std::string>::allocator<std::_Rb_tree_node<std::string> >(std::allocator<std::_Rb_tree_node<std::string> > const&) [48]
+[44]     0.0    0.00    0.00      20         __gnu_cxx::new_allocator<std::string>::new_allocator() [44]
+-----------------------------------------------
+                0.00    0.00      20/20          std::allocator<std::string>::~allocator() [49]
+[45]     0.0    0.00    0.00      20         __gnu_cxx::new_allocator<std::string>::~new_allocator() [45]
+-----------------------------------------------
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+[46]     0.0    0.00    0.00      20         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [46]
+                0.00    0.00      20/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_Node_allocator() const [47]
+                0.00    0.00      20/20          std::allocator<std::string>::allocator<std::_Rb_tree_node<std::string> >(std::allocator<std::_Rb_tree_node<std::string> > const&) [48]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [46]
+[47]     0.0    0.00    0.00      20         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_Node_allocator() const [47]
+-----------------------------------------------
+                0.00    0.00      20/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [46]
+[48]     0.0    0.00    0.00      20         std::allocator<std::string>::allocator<std::_Rb_tree_node<std::string> >(std::allocator<std::_Rb_tree_node<std::string> > const&) [48]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<std::string>::new_allocator() [44]
+-----------------------------------------------
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+[49]     0.0    0.00    0.00      20         std::allocator<std::string>::~allocator() [49]
+                0.00    0.00      20/20          __gnu_cxx::new_allocator<std::string>::~new_allocator() [45]
+-----------------------------------------------
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+[50]     0.0    0.00    0.00      20         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() [50]
+-----------------------------------------------
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+[51]     0.0    0.00    0.00      20         std::string* std::__addressof<std::string>(std::string&) [51]
+-----------------------------------------------
+                0.00    0.00       4/14          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00      10/14          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+[52]     0.0    0.00    0.00      14         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base*) [52]
+-----------------------------------------------
+                0.00    0.00       2/12          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree() [85]
+                0.00    0.00      10/12          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[53]     0.0    0.00    0.00      12         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() [53]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+[54]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [54]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+[55]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [55]
+                0.00    0.00      10/10          operator new(unsigned int, void*) [71]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_put_node(std::_Rb_tree_node<std::string>*) [66]
+[56]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::deallocate(std::_Rb_tree_node<std::string>*, unsigned int) [56]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_node() [65]
+[57]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::allocate(unsigned int, void const*) [57]
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::max_size() const [58]
+-----------------------------------------------
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::allocate(unsigned int, void const*) [57]
+[58]     0.0    0.00    0.00      10         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::max_size() const [58]
+-----------------------------------------------
+                0.00    0.00      10/10          std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+[59]     0.0    0.00    0.00      10         std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::string> const&) [59]
+-----------------------------------------------
+                0.00    0.00       4/10          test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00       6/10          test_ProxUrlExtractor_Extract2() [87]
+[60]     0.0    0.00    0.00      10         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+                0.00    0.00      10/10          std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::string> const&) [59]
+                0.00    0.00      10/10          std::pair<std::_Rb_tree_const_iterator<std::string>, bool>::pair(std::_Rb_tree_const_iterator<std::string> const&, bool const&) [63]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[61]     0.0    0.00    0.00      10         std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [61]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+[62]     0.0    0.00    0.00      10         std::pair<std::_Rb_tree_iterator<std::string>, bool>::pair(std::_Rb_tree_iterator<std::string> const&, bool const&) [62]
+-----------------------------------------------
+                0.00    0.00      10/10          std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+[63]     0.0    0.00    0.00      10         std::pair<std::_Rb_tree_const_iterator<std::string>, bool>::pair(std::_Rb_tree_const_iterator<std::string> const&, bool const&) [63]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+[64]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() [50]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+                0.00    0.00      10/23          std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*) [42]
+                0.00    0.00       8/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+                0.00    0.00       8/761         std::_Identity<std::string>::operator()(std::string const&) const [10]
+                0.00    0.00       8/743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+[65]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_node() [65]
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::allocate(unsigned int, void const*) [57]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+[66]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_put_node(std::_Rb_tree_node<std::string>*) [66]
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::deallocate(std::_Rb_tree_node<std::string>*, unsigned int) [56]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+[67]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&) [67]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_node() [65]
+                0.00    0.00      10/20          std::string* std::__addressof<std::string>(std::string&) [51]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [46]
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [55]
+                0.00    0.00      10/20          std::allocator<std::string>::~allocator() [49]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+[68]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+                0.00    0.00      10/20          std::string* std::__addressof<std::string>(std::string&) [51]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [46]
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [54]
+                0.00    0.00      10/20          std::allocator<std::string>::~allocator() [49]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_put_node(std::_Rb_tree_node<std::string>*) [66]
+-----------------------------------------------
+                0.00    0.00      10/10          std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+[69]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+                0.00    0.00      10/761         std::_Identity<std::string>::operator()(std::string const&) const [10]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [64]
+                0.00    0.00      10/10          std::pair<std::_Rb_tree_iterator<std::string>, bool>::pair(std::_Rb_tree_iterator<std::string> const&, bool const&) [62]
+-----------------------------------------------
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&) [69]
+[70]     0.0    0.00    0.00      10         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+                0.00    0.00      23/743         std::less<std::string>::operator()(std::string const&, std::string const&) const [11]
+                0.00    0.00      15/555         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*) [14]
+                0.00    0.00      11/21          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base*) [43]
+                0.00    0.00      10/12          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() [53]
+                0.00    0.00      10/20          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() [50]
+                0.00    0.00      10/23          std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*) [42]
+                0.00    0.00      10/10          std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [61]
+                0.00    0.00       8/188         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*) [21]
+                0.00    0.00       4/14          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base*) [52]
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::begin() [73]
+                0.00    0.00       3/3           std::_Rb_tree_iterator<std::string>::operator==(std::_Rb_tree_iterator<std::string> const&) const [72]
+                0.00    0.00       1/1           std::_Rb_tree_iterator<std::string>::operator--() [88]
+-----------------------------------------------
+                0.00    0.00      10/10          __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [55]
+[71]     0.0    0.00    0.00      10         operator new(unsigned int, void*) [71]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[72]     0.0    0.00    0.00       3         std::_Rb_tree_iterator<std::string>::operator==(std::_Rb_tree_iterator<std::string> const&) const [72]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[73]     0.0    0.00    0.00       3         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::begin() [73]
+                0.00    0.00       3/23          std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*) [42]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::_Rb_tree_node<std::string> >::allocator() [76]
+[74]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::new_allocator() [74]
+-----------------------------------------------
+                0.00    0.00       2/2           std::allocator<std::_Rb_tree_node<std::string> >::~allocator() [77]
+[75]     0.0    0.00    0.00       2         __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::~new_allocator() [75]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [81]
+[76]     0.0    0.00    0.00       2         std::allocator<std::_Rb_tree_node<std::string> >::allocator() [76]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::new_allocator() [74]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [82]
+[77]     0.0    0.00    0.00       2         std::allocator<std::_Rb_tree_node<std::string> >::~allocator() [77]
+                0.00    0.00       2/2           __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::~new_allocator() [75]
+-----------------------------------------------
+                0.00    0.00       1/2           test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00       1/2           test_ProxUrlExtractor_Extract2() [87]
+[78]     0.0    0.00    0.00       2         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set() [78]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree() [84]
+-----------------------------------------------
+                0.00    0.00       1/2           test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00       1/2           test_ProxUrlExtractor_Extract2() [87]
+[79]     0.0    0.00    0.00       2         std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set() [79]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree() [85]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [81]
+[80]     0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize() [80]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree() [84]
+[81]     0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [81]
+                0.00    0.00       2/2           std::allocator<std::_Rb_tree_node<std::string> >::allocator() [76]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize() [80]
+-----------------------------------------------
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree() [85]
+[82]     0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [82]
+                0.00    0.00       2/2           std::allocator<std::_Rb_tree_node<std::string> >::~allocator() [77]
+-----------------------------------------------
+                                  10             std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree() [85]
+[83]     0.0    0.00    0.00       2+10      std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+                0.00    0.00      10/21          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base*) [43]
+                0.00    0.00      10/14          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base*) [52]
+                0.00    0.00      10/10          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*) [68]
+                                  10             std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+-----------------------------------------------
+                0.00    0.00       2/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set() [78]
+[84]     0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree() [84]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl() [81]
+-----------------------------------------------
+                0.00    0.00       2/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set() [79]
+[85]     0.0    0.00    0.00       2         std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree() [85]
+                0.00    0.00       2/12          std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() [53]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*) [83]
+                0.00    0.00       2/2           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl() [82]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[86]     0.0    0.00    0.00       1         test_ProxUrlExtractor_Extract1() [86]
+                0.00    0.00      14/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&) [32]
+                0.00    0.00      14/61          bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [39]
+                0.00    0.00       4/10          std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+                0.00    0.00       1/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set() [78]
+                0.00    0.00       1/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[87]     0.0    0.00    0.00       1         test_ProxUrlExtractor_Extract2() [87]
+                0.00    0.00      47/61          qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&) [32]
+                0.00    0.00      47/61          bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [39]
+                0.00    0.00       6/10          std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [60]
+                0.00    0.00       1/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set() [78]
+                0.00    0.00       1/2           std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set() [79]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&) [70]
+[88]     0.0    0.00    0.00       1         std::_Rb_tree_iterator<std::string>::operator--() [88]
+-----------------------------------------------
+
+Index by function name
+
+  [86] test_ProxUrlExtractor_Extract1() [27] std::set<std::string, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [66] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_put_node(std::_Rb_tree_node<std::string>*)
+  [87] test_ProxUrlExtractor_Extract2() [11] std::less<std::string>::operator()(std::string const&, std::string const&) const [80] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_M_initialize()
+  [32] qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&) [46] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::get_allocator() const [81] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::_Rb_tree_impl()
+  [33] qh::ProxyURLExtractor::Extract(std::set<std::string, std::less<std::string>, std::allocator<std::string> > const&, std::string const&, std::string&) [28] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_lower_bound(std::_Rb_tree_node<std::string> const*, std::_Rb_tree_node<std::string> const*, std::string const&) const [82] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree_impl<std::less<std::string>, false>::~_Rb_tree_impl()
+  [20] qh::Tokener::nextString(char) [47] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_Node_allocator() const [67] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_create_node(std::string const&)
+  [23] qh::Tokener::back()    [16] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::end() const [68] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_destroy_node(std::_Rb_tree_node<std::string>*)
+   [9] qh::Tokener::next()    [29] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::find(std::string const&) const [69] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_unique(std::string const&)
+  [34] qh::Tokener::reset(char const*, int) [30] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end() const [70] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_insert_unique_pos(std::string const&)
+  [18] qh::Tokener::skipTo(char) [31] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin() const [73] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::begin()
+  [35] qh::Tokener::Tokener(std::string const&) [10] std::_Identity<std::string>::operator()(std::string const&) const [50] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_end()
+  [36] qh::Tokener::~Tokener() [48] std::allocator<std::string>::allocator<std::_Rb_tree_node<std::string> >(std::allocator<std::_Rb_tree_node<std::string> > const&) [14] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node<std::string> const*)
+  [54] __gnu_cxx::new_allocator<std::string>::destroy(std::string*) [49] std::allocator<std::string>::~allocator() [21] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_key(std::_Rb_tree_node_base const*)
+  [55] __gnu_cxx::new_allocator<std::string>::construct(std::string*, std::string const&) [76] std::allocator<std::_Rb_tree_node<std::string> >::allocator() [17] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base const*)
+  [44] __gnu_cxx::new_allocator<std::string>::new_allocator() [77] std::allocator<std::_Rb_tree_node<std::string> >::~allocator() [52] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_left(std::_Rb_tree_node_base*)
+  [45] __gnu_cxx::new_allocator<std::string>::~new_allocator() [37] std::char_traits<char>::compare(char const*, char const*, unsigned int) [53] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_begin()
+  [56] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::deallocate(std::_Rb_tree_node<std::string>*, unsigned int) [42] std::_Rb_tree_iterator<std::string>::_Rb_tree_iterator(std::_Rb_tree_node<std::string>*) [83] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_erase(std::_Rb_tree_node<std::string>*)
+  [57] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::allocate(unsigned int, void const*) [88] std::_Rb_tree_iterator<std::string>::operator--() [19] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base const*)
+  [74] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::new_allocator() [13] std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_node<std::string> const*) [43] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_right(std::_Rb_tree_node_base*)
+  [75] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::~new_allocator() [59] std::_Rb_tree_const_iterator<std::string>::_Rb_tree_const_iterator(std::_Rb_tree_iterator<std::string> const&) [15] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node<std::string> const*)
+  [40] qh::Tokener::getCurReadPos() const [60] std::set<std::string, std::less<std::string>, std::allocator<std::string> >::insert(std::string const&) [22] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_S_value(std::_Rb_tree_node_base const*)
+  [41] qh::Tokener::getReadableSize() const [78] std::set<std::string, std::less<std::string>, std::allocator<std::string> >::set() [84] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_Rb_tree()
+   [8] qh::Tokener::isEnd() const [79] std::set<std::string, std::less<std::string>, std::allocator<std::string> >::~set() [85] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::~_Rb_tree()
+  [58] __gnu_cxx::new_allocator<std::_Rb_tree_node<std::string> >::max_size() const [61] std::pair<std::_Rb_tree_node_base*, std::_Rb_tree_node_base*>::pair(std::_Rb_tree_node_base* const&, std::_Rb_tree_node_base* const&) [51] std::string* std::__addressof<std::string>(std::string&)
+  [72] std::_Rb_tree_iterator<std::string>::operator==(std::_Rb_tree_iterator<std::string> const&) const [62] std::pair<std::_Rb_tree_iterator<std::string>, bool>::pair(std::_Rb_tree_iterator<std::string> const&, bool const&) [38] __gnu_cxx::__enable_if<std::__is_char<char>::__value, bool>::__type std::operator==<char>(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [24] std::_Rb_tree_const_iterator<std::string>::operator==(std::_Rb_tree_const_iterator<std::string> const&) const [63] std::pair<std::_Rb_tree_const_iterator<std::string>, bool>::pair(std::_Rb_tree_const_iterator<std::string> const&, bool const&) [12] bool std::operator< <char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [25] std::_Rb_tree_const_iterator<std::string>::operator!=(std::_Rb_tree_const_iterator<std::string> const&) const [64] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_insert_(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::string const&) [39] bool std::operator!=<char, std::char_traits<char>, std::allocator<char> >(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  [26] std::set<std::string, std::less<std::string>, std::allocator<std::string> >::end() const [65] std::_Rb_tree<std::string, std::string, std::_Identity<std::string>, std::less<std::string>, std::allocator<std::string> >::_M_get_node() [71] operator new(unsigned int, void*)

@@ -1,5 +1,4 @@
 #include "proxy_url_extractor.h"
-#include <fstream>
 #include <vector>
 #include "tokener.h"
 
@@ -111,12 +110,9 @@ namespace qh
             if (keys.find(key) != keys.end()) {
                 const char* curpos = token.getCurReadPos();
                 int nreadable = token.getReadableSize();
-
                 sub_url = token.nextString('&');
-
                 if (sub_url.empty() && nreadable > 0 && *curpos != '&')
 				{
-
                     assert(curpos);
                     sub_url.assign(curpos, nreadable);
                 }

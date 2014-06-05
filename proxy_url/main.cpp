@@ -154,6 +154,7 @@ int main(int argc, char* argv[])
 {
     test_ProxUrlExtractor_Extract1();
     test_ProxUrlExtractor_Extract2();
+
 #ifdef WIN32
     system("pause");
 #endif

@@ -3,6 +3,7 @@
 
 #include <assert.h>
 #include <string.h>
+#include <fstream>
 #include <string>
 
 namespace qh
