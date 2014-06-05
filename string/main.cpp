@@ -1,16 +1,17 @@
 
 #include <stdio.h>
 #include "qh_string.h"
+#include <assert.h>
 
 void test1()
 {
 	qh::string str;
-	assert( '\0' == *str[0] && 0 == str.size() );
+	assert( '\0' == *str[0] );
+	assert( 0 == str.size() );
 
 	qh::string str_test = "1234567";
 	str = str_test;
 	assert( *(str.c_str() + str.size()) == '\0' );
-	assert( *(str.data() + str.size()) != '\0' );
 	assert( !strcmp(str.c_str(), str_test.c_str()) );
 }
 
@@ -18,40 +19,41 @@ void test2()
 {
 	const char str_test[] = "abcdefg";
 	qh::string str(str_test);
-	assert( !strcmp(str.c_str(), str_test) && 0 == str.size() );
-	char s = *str[0];
-	s = *str[7];
-	s = *str[9];
-	s = *str[-1];
+	assert( !strcmp(str.c_str(), str_test) );
+	assert( 7 == str.size() );
+	assert( 'a' == *(str[0]) );
+	assert( '\0' == *str[7] );
+	assert( NULL == str[9] );
 
 	qh::string str2;
 	str = str2;
-	assert( '\0' == *str[0] && 0 == str.size() );
-
+	assert( '\0' == *str[0] );
+	assert( 0 == str.size() );
 	assert( *(str.c_str() + str.size()) == '\0' );
 }
 
 void test3()
 {
-	const char str_test[] = "abcdefg";
+	char str_test[] = "abcdefg";
 	qh::string str(str_test, 4);
-	assert( 'd' == *str[3] && 4 == str.size() );
+	assert( 'd' == *str[3] );
+	assert( 4 == str.size() );
 
-	qh::string str2 = "1234";
+	qh::string str2 = "1234645765";
 	str = str2;
-	int res = strcmp(str.c_str(), str2.c_str());
-	assert( 0 == res );
+	assert( !strcmp(str.c_str(), str2.c_str()) );
 }
 
 void test4()
 {
-	const qh::string str_test = "abcdefg";
+	const qh::string str_test = "abcdefgfgdgdfgfd";
 	qh::string str(str_test);
-	assert( !strcmp(str.c_str(), str_test.c_str()) && 7 == str.size() );
-	char s = *str[0];
-	s = *str[4];
-	s = *str[7];
-	s = *str[-1];
+	assert( !strcmp(str.c_str(), str_test.c_str()) );
+	assert( 16 == str.size() );
+	assert( 'd'== *str[3] );
+	assert( 'f'== *str[7] );
+	assert( NULL== str[29] );
+	assert( NULL== str[-1] );
 }
 
 

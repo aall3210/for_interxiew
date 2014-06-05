@@ -19,11 +19,13 @@ namespace qh
 
     string::string( const char* s, size_t len )
     {
-        assert( len>=0 );
-        len_ = (strlen(s) < len) ? strlen(s) : len;
-        data_ = new char [len_ + 1];
-        strncpy( data_, s, len_ );
-        data_[len_] = '\0';
+		if(len > 0)
+		{
+			len_ = (strlen(s) < len) ? strlen(s) : len;
+			data_ = new char [len_ + 1];
+			strncpy( data_, s, len_ );
+			data_[len_] = '\0';
+		}
     }
 
     string::string( const string& rhs )
@@ -49,7 +51,7 @@ namespace qh
     string::~string()
     {
         delete [] data_;
-        data_ = nullptr;
+        data_ = NULL;
     }
 
     size_t string::size() const
@@ -60,13 +62,7 @@ namespace qh
     // need to improve
     const char* string::data() const
     {
-        if(len_ != 0)
-        {
-            char *s = new char [len_];
-            strncpy( s, data_ , len_ );
-            return s;
-        }
-        return nullptr;
+        return c_str();
     }
 
     const char* string::c_str() const
@@ -76,9 +72,9 @@ namespace qh
 
     char* string::operator[]( size_t index )
     {
-        assert( index>=0 );
-        assert( index<=len_ );
-        return data_ + index;
+        if( index>=0 && index<=len_ )
+            return data_ + index;
+        return NULL;
     }
 
 }

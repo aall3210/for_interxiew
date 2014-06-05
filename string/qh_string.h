@@ -2,8 +2,6 @@
 #define QIHOO_STRING_H_
 
 #include <stdlib.h>
-// #define NDEBUG
-#include <assert.h>
 #include <string.h>
 
 
