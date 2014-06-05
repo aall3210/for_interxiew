@@ -94,6 +94,7 @@ namespace qh
         return sub_url;
     }
 
+    // 直接在原始方法上修改，处理异常分支。也可以重新用状态机做。
     void ProxyURLExtractor::Extract( const KeyItems& keys, const std::string& raw_url, std::string& sub_url )
     {
 #if 1

@@ -3,7 +3,6 @@
 
 namespace qh
 {
-	// do we need ??
 	static const char left_tag     = '[';  
     static const char right_tag    = ']';  
     static const char* equal        = "=";  
@@ -17,6 +16,7 @@ namespace qh
 	{
 	}
 
+	// 从硬盘读取文件到内存，再进行ini解析
 	bool INIParser::Parse(const std::string& ini_file_path)
 	{
 		ifstream in_file(ini_file_path.c_str());
@@ -46,6 +46,8 @@ namespace qh
 		return Parse(buffer, len_of_file);
 	}
 
+	// 通过状态机解析，共有三个状态，STATE_SECTION, STATE_KEY, STATE_VALUE
+	// 该解析的没有考虑comments，同时默认当line_seperator不为空格时，字符串中没有空格
 	bool INIParser::Parse(const char* ini_data, size_t ini_data_len, 
 					 const std::string& line_seperator, 
 					 const std::string& key_value_seperator )
@@ -133,11 +135,14 @@ namespace qh
         return true;
 	}
 
+	// 默认section是空串
 	const std::string& INIParser::Get(const std::string& key, bool* found)
 	{
 		return Get("", key, found);
 	}
 
+	// 当key不在对应查询的section中时，在map每个section中添加空串对
+	// 以便查询失败返回引用空串。
 	const std::string& INIParser::Get(const std::string& section, const std::string& key, bool* found)
 	{
 		section_map::iterator iter_section = section_.find(section);

@@ -28,6 +28,7 @@ namespace qh
 		}
     }
 
+	// copy ctor
     string::string( const string& rhs )
     {
         len_ = rhs.len_;
@@ -35,7 +36,7 @@ namespace qh
         strcpy( data_, rhs.data_ );        
     }
 
-    // need to improve
+	// copy assign
     string& string::operator=( const string& rhs )
     {
         if( this != &rhs )
@@ -59,7 +60,7 @@ namespace qh
         return len_;
     }
 
-    // need to improve
+    // from C++11, the data() is same with c_str()
     const char* string::data() const
     {
         return c_str();
