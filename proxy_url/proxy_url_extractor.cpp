@@ -94,14 +94,47 @@ namespace qh
         return sub_url;
     }
 
-    // 直接在原始方法上修改，处理异常分支。也可以重新用状态机做。
+    // 直接在原始方法上修改，处理异常分支。直接用string做我想会更好。
     void ProxyURLExtractor::Extract( const KeyItems& keys, const std::string& raw_url, std::string& sub_url )
     {
 #if 1
         //TODO 请面试者在这里添加自己的代码实现以完成所需功能
+        int pos = raw_url.find_first_of("?");
+		assert(pos != std::string::npos);
+        // skip of '?', maybe have some
+		while('?' == raw_url[pos])
+		{
+			++pos;
+		}
+		int value_end; 
+		int key_begin;
+		int equal;
+		std::string key;
+		while(pos < raw_url.size())
+		{
+			equal = raw_url.find_first_of("=", pos);
+            // 都需要处理异常情况
+			if(std::string::npos == equal)
+				break;
+			key_begin = raw_url.find_last_of("&", equal);
+			key_begin = (std::string::npos == key_begin) ? pos : key_begin + 1;
+			key = raw_url.substr(key_begin, equal - key_begin);
+			value_end = raw_url.find_first_of("&", equal);
+			value_end = (std::string::npos == value_end) ? raw_url.size() : value_end;
+			++equal;
+			if (keys.find(key) != keys.end()) 
+			{
+				sub_url = raw_url.substr(equal, value_end - equal);
+			}
+			pos = value_end + 1;
+		}
+        /*
 		Tokener token(raw_url);
         token.skipTo('?');
-        token.next();    		//skip one char : '?' 
+		while('?' == token.current())
+		{
+			token.next();
+		}
         std::string key;
 		int pos;
         while (!token.isEnd()) {
@@ -123,7 +156,7 @@ namespace qh
             else
 				break;
         }
-
+        */
 #else
         //这是一份参考实现，但在特殊情况下工作不能符合预期
         Tokener token(raw_url);

@@ -17,11 +17,14 @@ namespace qh
 	}
 
 	// 从硬盘读取文件到内存，再进行ini解析
+	// 处理好文件句柄打开而未关闭
 	bool INIParser::Parse(const std::string& ini_file_path)
 	{
 		ifstream in_file(ini_file_path.c_str());
 		if(NULL == in_file)
 		{
+			fprintf(stderr, "INIParser::Parse read_filepath_error=[%s] error!!", ini_file_path.c_str());
+            in_file.close();
 			return false;
 		}
 
@@ -29,20 +32,18 @@ namespace qh
 		size_t len_of_file = in_file.tellg();
 		if(len_of_file < 0)
 		{
+			fprintf(stderr, "INIParser::Parse read_filelen error!!");
+            in_file.close();
 			return false;
 		}
 
 		char* buffer = new char [len_of_file + 1];
-		if(NULL == buffer)
-		{
-			return false;
-		}
 
 		in_file.seekg(0, ios::beg);
 		in_file.read(buffer, len_of_file);
 		buffer[len_of_file] = '\0';
-		in_file.close();
 
+		in_file.close();
 		return Parse(buffer, len_of_file);
 	}
 
@@ -54,10 +55,10 @@ namespace qh
 	{
         string  section_str;  
         string  key_str; 
-		size_t  pos = 0; 
-		size_t 	section_begin, section_end;
-		size_t 	value_end;
-		size_t 	key_end;
+		int  	pos = 0; 
+		int  	section_begin, section_end;
+		int 	value_end;
+		int 	key_end;
  
         string ini_data_str(ini_data, ini_data_len + 1);
 		ini_data_str[ini_data_len] = '\0';
@@ -107,7 +108,7 @@ namespace qh
         	case STATE_VALUE:
         		{
         			value_end = ini_data_str.find_first_of( line_seperator, pos );
-					if(value_end >= ini_data_len)
+					if(value_end == string::npos)
 					{
 						section_[section_str][key_str] = ini_data_str.substr(pos, ini_data_len - pos);  
 						pos = ini_data_len;
@@ -121,7 +122,7 @@ namespace qh
 						{
 							state = STATE_SECTION; 
 						}
-						else if(pos < ini_data_len)
+						else if(pos != string::npos)
 						{
 							state = STATE_KEY; 
 						}

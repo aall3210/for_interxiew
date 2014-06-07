@@ -42,7 +42,7 @@ void test_ProxUrlExtractor_Extract1()
     for (size_t i = 0; i < H_ARRAY_SIZE(test_data); i++)
     {
         if (ProxyURLExtractor::Extract(keys, test_data[i][0]) != test_data[i][1]) {
-            //fprintf(stderr, "test failed [%s]\n", test_data[i][0].data());
+            fprintf(stderr, "test failed [%s]\n", test_data[i][0].data());
             all_test_ok = false;
             assert(false);
         }
@@ -149,6 +149,7 @@ void test_ProxUrlExtractor_Extract2()
         printf("%s test failed!\n", __FUNCTION__);
     }
 }
+
 
 int main(int argc, char* argv[])
 {

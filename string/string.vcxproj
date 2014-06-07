@@ -10,6 +10,13 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="qh_string.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="qh_string.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{030A992D-1228-4434-9E8F-FC5C48831DD1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -73,13 +80,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="qh_string.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="qh_string.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

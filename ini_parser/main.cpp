@@ -18,6 +18,7 @@ void test1()
 	
     const std::string& c = parser.Get("c", NULL);
     assert(c == "");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test2()
@@ -36,6 +37,7 @@ void test2()
 
     const std::string& c = parser.Get("c", NULL);
     assert(c == "3");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test3()
@@ -54,6 +56,7 @@ void test3()
 
     const std::string& c = parser.Get("c", NULL);
     assert(c == "3");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test4()
@@ -72,6 +75,7 @@ void test4()
 
     const std::string& c = parser.Get("sec", "c", NULL);
     assert(c == "");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test5()
@@ -90,27 +94,29 @@ void test5()
 
     const std::string& c = parser.Get("sec", "cd", NULL);
     assert(c == "3");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test6()
 {
-    const char* ini_text = "[sec]   a=1  bb=2    ccc=3    ";
+    const char* ini_text = "[sec][sec1]   a=1  bb=2    ccc=3    ";
     qh::INIParser parser;
     if (!parser.Parse(ini_text, strlen(ini_text), " ", "=")) {
         assert(false);
     }
 
-    const std::string& a = parser.Get("sec", "a", NULL);
+    const std::string& a = parser.Get("sec1", "a", NULL);
     assert(a == "1");
 
-    std::string b = parser.Get("sec", "bb", NULL);
+    std::string b = parser.Get("sec1", "bb", NULL);
     assert(b == "2");
 
     const std::string& c = parser.Get("sec", "ccc", NULL);
-    assert(c == "3");
+    assert(c == "");
 
-	const std::string& d = parser.Get("sec", "dddd", NULL);
+	const std::string& d = parser.Get("sec1", "dddd", NULL);
     assert(d == "");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 void test7()
@@ -144,6 +150,7 @@ void test7()
 
 	const std::string& d = parser.Get("sec2", "dddd", NULL);
     assert(d == "");
+    printf( "%s() all test OK!\n", __FUNCTION__ );
 }
 
 int main(int argc, char* argv[])
